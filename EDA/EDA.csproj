@@ -1,0 +1,177 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FD5E1B1-6CC1-4630-BD59-4733BECE0770}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InternetBrands.Core.Event</RootNamespace>
+    <AssemblyName>InternetBrands.Core.Event</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;UNIT_TEST</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\lib\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="antlr.runtime, Version=2.7.5.2, Culture=neutral, PublicKeyToken=65e474d141e25e07" />
+    <Reference Include="CodeEngine, Version=1.0.1402.35092, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\CodeEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreLibrary, Version=1.0.0.15143, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\CoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="InternetBrands.Mail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\InternetBrands.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="InternetBrands.Messaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\InternetBrands.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="InternetBrands.SpecialFinance.Acquisition, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\lib\InternetBrands.SpecialFinance.Acquisition.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.HexValidEmailLib, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\Interop.HexValidEmailLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IQueueMonitor, Version=1.0.2583.15142, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ref\IQueueMonitor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\NUnit 2.2.8\bin\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\NUnit 2.2.8\bin\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.1.0.2, Culture=neutral, PublicKeyToken=65e474d141e25e07" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CanonicalEventArgs.cs" />
+    <Compile Include="Channel\Messaging\MessagingEventStreamProvider.cs" />
+    <Compile Include="Channel\Messaging\Test\MessagingEventStreamProviderTest.cs" />
+    <Compile Include="Channel\EventChannelException.cs" />
+    <Compile Include="Channel\Configuration\EventStreamProvider.cs" />
+    <Compile Include="Channel\Configuration\EventStreamProviderCollection.cs" />
+    <Compile Include="Channel\EventStreamService.cs" />
+    <Compile Include="Channel\Configuration\EventStreamProviderSection.cs" />
+    <Compile Include="Channel\Memory\MemoryEventStreamProvider.cs" />
+    <Compile Include="Channel\IEventInputStream.cs" />
+    <Compile Include="Channel\IEventOutputStream.cs" />
+    <Compile Include="Channel\IEventStreamProvider.cs" />
+    <Compile Include="Channel\Messaging\MessageReceiverEventChannel.cs" />
+    <Compile Include="Channel\Messaging\MessageReceiverEventStream.cs" />
+    <Compile Include="Channel\Messaging\MessageSenderEventChannel.cs" />
+    <Compile Include="Channel\Messaging\MessageSenderEventStream.cs" />
+    <Compile Include="Channel\Messaging\Test\MessageSenderEventChannelTest.cs" />
+    <Compile Include="Channel\Messaging\Test\MessageSenderEventStreamTest.cs" />
+    <Compile Include="EPL\GrammarException.cs" />
+    <Compile Include="EPL\Statement.cs" />
+    <Compile Include="EPL\Grammar.cs" />
+    <Compile Include="EPL\GrammerToken.cs" />
+    <Compile Include="EPL\Predicate.cs" />
+    <Compile Include="EPL\Projection.cs" />
+    <Compile Include="EPL\Retention.cs" />
+    <Compile Include="EPL\Scanner.cs" />
+    <Compile Include="EPL\Token.cs" />
+    <Compile Include="Event.cs" />
+    <Compile Include="EventItem.cs" />
+    <Compile Include="Channel\Memory\MemoryEventChannel.cs" />
+    <Compile Include="EventResource.cs" />
+    <Compile Include="EventSourceException.cs" />
+    <Compile Include="EventStreamFactory.cs" />
+    <Compile Include="EventNotifier.cs" />
+    <Compile Include="Channel\Memory\MemoryEventStream.cs" />
+    <Compile Include="CanonicalEvent.cs" />
+    <Compile Include="EventProcessor.cs" />
+    <Compile Include="EventSource.cs" />
+    <Compile Include="IEventAction.cs" />
+    <Compile Include="IEventChannel.cs" />
+    <Compile Include="IEventNotifier.cs" />
+    <Compile Include="IEventProcessor.cs" />
+    <Compile Include="IEventRule.cs" />
+    <Compile Include="IEventSource.cs" />
+    <Compile Include="IEventStream.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Action\AggregateEventAction.cs" />
+    <Compile Include="EventAction.cs" />
+    <Compile Include="Registry.cs" />
+    <Compile Include="Resource\ResourceLoader.cs" />
+    <Compile Include="Rule\Base32Encoder.cs" />
+    <Compile Include="Rule\EmptyRule.cs" />
+    <Compile Include="Rule\EventLanguageCompiler.cs" />
+    <Compile Include="Rule\EventRule.cs" />
+    <Compile Include="Rule\EventRuleContext.cs" />
+    <Compile Include="Rule\EventRuleRegistry.cs" />
+    <Compile Include="Rule\ListenerAttribute.cs" />
+    <Compile Include="Rule\RuleFactory.cs" />
+    <Compile Include="Rule\RuleItem.cs" />
+    <Compile Include="Rule\RuleReader.cs" />
+    <Compile Include="Rule\RulesEngine.cs" />
+    <Compile Include="Rule\SaverRule.cs" />
+    <Compile Include="StandardEventNotifier.cs" />
+    <Compile Include="StandardEventProcessor.cs" />
+    <Compile Include="StandardEventSource.cs" />
+    <Compile Include="Test\RulesEngineTest.cs" />
+    <Compile Include="Test\StandardSimulator.cs" />
+    <Compile Include="Test\WholesaleEventProcessorTest.cs" />
+    <Compile Include="Threads\ExecutorService.cs" />
+    <Compile Include="Test\Simulator.cs" />
+    <Compile Include="Threads\ILifeCycle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\RichSoap.xml" />
+    <Content Include="Resource\Soap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Channel\Configuration\Test\" />
+    <Folder Include="Xml\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

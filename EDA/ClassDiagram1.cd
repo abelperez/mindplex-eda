@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="InternetBrands.Core.Event.Action.AggregateEventAction" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Action\AggregateEventAction.cs</FileName>
+      <HashCode>AAAAEAAAAAAAAAQAAAAAAQAAAAAAAAQAAAAAAAQEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Configuration.EventStreamProvider" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Channel\Configuration\EventStreamProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Configuration.EventStreamProviderCollection" Collapsed="true">
+    <Position X="33.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Configuration\EventStreamProviderCollection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Configuration.EventStreamProviderSection" Collapsed="true">
+    <Position X="35.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Configuration\EventStreamProviderSection.cs</FileName>
+      <HashCode>AAAEAQCAAAAEAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Configuration.MemoryEventStreamProvider" Collapsed="true">
+    <Position X="0.5" Y="6" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Channel\Configuration\MemoryEventStreamProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Configuration.MessagingEventStreamProvider" Collapsed="true">
+    <Position X="3" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Configuration\MessagingEventStreamProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Memory.MemoryEventChannel" Collapsed="true">
+    <Position X="17" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Channel\Memory\MemoryEventChannel.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAQAAAAAAAAAgA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Memory.MemoryEventStream" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="35.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Memory\MemoryEventStream.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAEAEAAAAAAAAAEAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Memory.MemoryEventStreamRegistry" Collapsed="true">
+    <Position X="26.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Memory\MemoryEventStreamRegistry.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Messaging.MessageReceiverEventChannel" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Channel\Messaging\MessageReceiverEventChannel.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAUBAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Messaging.MessageReceiverEventStream" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Channel\Messaging\MessageReceiverEventStream.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAEAEAAAAAAAAAEAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Messaging.MessageSenderEventChannel" Collapsed="true">
+    <Position X="12" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Channel\Messaging\MessageSenderEventChannel.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAAAAAEAAAAAAAAAAAAAUAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Messaging.MessageSenderEventStream" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Channel\Messaging\MessageSenderEventStream.cs</FileName>
+      <HashCode>AAAAAAAAAAAAIAAEAEAAAAAAAAAEAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.Messaging.MessagingEventStreamRegistry" Collapsed="true">
+    <Position X="28.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\Messaging\MessagingEventStreamRegistry.cs</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.EventChannelException" Collapsed="true">
+    <Position X="33.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\EventChannelException.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Channel.EventStreamService" Collapsed="true">
+    <Position X="26.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\EventStreamService.cs</FileName>
+      <HashCode>AAAAAAQAAAAEAQACAAAAAAAAAAAAAAAAQAAMAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Grammar" Collapsed="true">
+    <Position X="28.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Grammar.cs</FileName>
+      <HashCode>gAEkAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.GrammarException" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\GrammarException.cs</FileName>
+      <HashCode>AAEAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.GrammarToken" Collapsed="true">
+    <Position X="31.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\GrammerToken.cs</FileName>
+      <HashCode>AAEAAAAAAAAAAAAkAAAAIAAAAAAAACAAAAAgAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Predicate" Collapsed="true">
+    <Position X="30" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Predicate.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAIAAAAAACAAAAAgAQAAIAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Projection" Collapsed="true">
+    <Position X="31.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Projection.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Retention" Collapsed="true">
+    <Position X="35.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Retention.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEBAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Scanner" Collapsed="true">
+    <Position X="33.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Scanner.cs</FileName>
+      <HashCode>AgEAAAAIAIAAAAAAAAAAAIAAAAAIAAAAAAAAAAIQQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EPL.Statement" Collapsed="true">
+    <Position X="35.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Statement.cs</FileName>
+      <HashCode>ARAAAAAAAAAAAIAEAAAgAAAAAAABAAAAAQAAAAEQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Resource.ResourceLoader" Collapsed="true">
+    <Position X="33.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Resource\ResourceLoader.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Base32Encoding.Base32Encoder" Collapsed="true">
+    <Position X="26.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\Base32Encoder.cs</FileName>
+      <NewMemberFileName>Base32Encoder.cs</NewMemberFileName>
+      <HashCode>AAAAAQAAAABAAAAAAAAAAQAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.EmptyRule" Collapsed="true">
+    <Position X="24" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\EmptyRule.cs</FileName>
+      <NewMemberFileName>EmptyRule.cs</NewMemberFileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.EventLanguageCompiler" Collapsed="true">
+    <Position X="23" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Rule\EventLanguageCompiler.cs</FileName>
+      <NewMemberFileName>EventLanguageCompiler.cs</NewMemberFileName>
+      <HashCode>AACQABgAAgQIEAIgAAAGABQAAAgAAAAgACAAgBIBAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.EventRule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="26.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\EventRule.cs</FileName>
+      <NewMemberFileName>EventRule.cs</NewMemberFileName>
+      <HashCode>AAAABAAAAAAIACAAAAQAAABEAAAAAAAAAAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.EventRuleContext" Collapsed="true">
+    <Position X="28.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\EventRuleContext.cs</FileName>
+      <NewMemberFileName>EventRuleContext.cs</NewMemberFileName>
+      <HashCode>BAAAAgQAEEIAABBAAAgAAAAIAAAAAQAAAABAAAAIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.EventRuleRegistry" Collapsed="true">
+    <Position X="30" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\EventRuleRegistry.cs</FileName>
+      <NewMemberFileName>EventRuleRegistry.cs</NewMemberFileName>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.ListenerAttribute" Collapsed="true">
+    <Position X="33.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\ListenerAttribute.cs</FileName>
+      <NewMemberFileName>ListenerAttribute.cs</NewMemberFileName>
+      <HashCode>AAgAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.RuleFactory" Collapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\RuleFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.RuleItem" Collapsed="true">
+    <Position X="28.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\RuleItem.cs</FileName>
+      <HashCode>AAAAQBAAAkAQAAIEAAAAAAQAEAAEAAAAAEAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.RuleReader" Collapsed="true">
+    <Position X="30" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\RuleReader.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.RulesEngine" Collapsed="true">
+    <Position X="31.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\RulesEngine.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Rule.SaverRule" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Rule\SaverRule.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Threads.ExecutorService" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Threads\ExecutorService.cs</FileName>
+      <NewMemberFileName>ExecutorService.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAACAAgCQQBAAEAAAEAAEAAAAgIgBAIAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.CanonicalEvent" Collapsed="true">
+    <Position X="28.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CanonicalEvent.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAAAAQQAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.CanonicalEventArgs" Collapsed="true">
+    <Position X="30" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>CanonicalEventArgs.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.Event" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Event.cs</FileName>
+      <NewMemberFileName>Copy of Event.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventAction" Collapsed="true">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventAction.cs</FileName>
+      <NewMemberFileName>Copy of EventAction.cs</NewMemberFileName>
+      <HashCode>ABAAAQAAAAAAAAQQAAAAAAAAAAAAEAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventNotifier" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventNotifier.cs</FileName>
+      <NewMemberFileName>Copy of EventNotifier.cs</NewMemberFileName>
+      <HashCode>AAAAEAgAAgAAgAYAAAACAAAAAABAAABAAEAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventProcessor" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventProcessor.cs</FileName>
+      <NewMemberFileName>Copy of EventProcessor.cs</NewMemberFileName>
+      <HashCode>AAAAQACAAAQAAAQAAgAEAAACEAAAAAAAAAAQAAAAEAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventResource" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventResource.cs</FileName>
+      <NewMemberFileName>Copy of EventResource.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAIAAAASAAAAAAAAIAAJAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventSource" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventSource.cs</FileName>
+      <NewMemberFileName>Copy of EventSource.cs</NewMemberFileName>
+      <HashCode>AAAAAQAAADAAAEQQIAAAAABAAAAAQAAEABAARAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventSourceException" Collapsed="true">
+    <Position X="31.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventSourceException.cs</FileName>
+      <NewMemberFileName>Copy of EventSourceException.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InternetBrands.Core.Event.EventItem&lt;T&gt;" Collapsed="true">
+    <Position X="35.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EventItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="InternetBrands.Core.Event.Channel.IEventInputStream" Collapsed="true">
+    <Position X="26.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\IEventInputStream.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InternetBrands.Core.Event.Channel.IEventOutputStream" Collapsed="true">
+    <Position X="28.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\IEventOutputStream.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InternetBrands.Core.Event.Channel.IEventStreamProvider" Collapsed="true">
+    <Position X="30" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Channel\IEventStreamProvider.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="InternetBrands.Core.Event.Threads.ILifeCycle" Collapsed="true">
+    <Position X="31.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Threads\ILifeCycle.cs</FileName>
+      <NewMemberFileName>ILifeCycle.cs</NewMemberFileName>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="InternetBrands.Core.Event.EPL.Token" Collapsed="true">
+    <Position X="26.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EPL\Token.cs</FileName>
+      <HashCode>IkQAAACABCAAAQAAgAAAACAChiEAIAgACYCARQQBCkQ=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>
